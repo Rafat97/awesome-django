@@ -446,11 +446,9 @@ _A short list of Python packages that work well with Django._
 ### Podcasts
 
 - [Django Chat](https://djangochat.com/) - A weekly podcast from William Vincent and Django Fellow Carlton Gibson with discussions of core Django concepts and regular guests.
-- [Django Riffs](https://djangoriffs.com) - A new podcast from Matt Layman.
-- [Running in Production](https://runninginproduction.com/tags/django) - Focused on tech stacks with many episodes specifically on Django.
-- [TalkPython](https://talkpython.fm/) - The leading Python podcast with several episodes on Django.
-- [Podcast Init](https://www.pythonpodcast.com/) - A popular Python podcast that features Django guests on occasion.
-- [Django Brew](https://djangobrew.com/) - A fun, caffeine-powered podcast about the Django web framework by Adam Hill and Sangeeta Jadoonanan!
+- [Django Brew](https://djangobrew.com/) - A fun, caffeine-powered podcast about the Django web framework by Adam Hill and Sangeeta Jadoonanan.
+- [TalkPython](https://talkpython.fm/) - The leading Python podcast with occassional episodes on Django.
+- [Running in Production](https://runninginproduction.com/tags/django) - No longer active, but a great backlog of episodes on Django tech stacks.
 
 ### Videos
 
