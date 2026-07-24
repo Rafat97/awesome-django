@@ -310,6 +310,7 @@ _For a complete listing of all available packages, see [Django Packages](https:/
 - [django-dramatiq](https://github.com/Bogdanp/django_dramatiq) - Task processing library with a focus on simplicity, reliability, and performance.
 - [django-celery-results](https://github.com/celery/django-celery-results) - Celery result backend with Django.
 - [django-tasks](https://github.com/realOrangeOne/django-tasks) - A reference implementation and backport of background workers and tasks in Django, based on [DEP 14](https://www.djangoproject.com/weblog/2024/may/29/django-enhancement-proposal-14-background-workers/).
+- [huey](https://github.com/coleifer/huey) - A little multi-threaded task queue with Django support, including the new `django.tasks` API.
 
 ### Templates
 - [django-components](https://github.com/django-components/django-components/) - A way to create simple reusable template components in Django.
