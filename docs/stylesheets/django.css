@@ -69,12 +69,23 @@
   margin-bottom: 0.2rem;
 }
 
-/* Footer additions */
+/* Footer additions. These sit inside .md-footer, which has a dark background,
+   so the text needs the footer foreground colors. */
 .awesome-django-footer {
-  padding: 1rem 0.8rem 0;
+  padding: 1.2rem 0.8rem;
+  color: var(--md-footer-fg-color--light);
   font-size: 0.7rem;
   line-height: 1.5;
   text-align: center;
+}
+
+.awesome-django-footer a {
+  color: var(--md-footer-fg-color);
+  text-decoration: underline;
+}
+
+.awesome-django-footer a:hover {
+  color: var(--md-accent-fg-color);
 }
 
 /* Capped to match the webring below it, so neither spans the whole footer. */
