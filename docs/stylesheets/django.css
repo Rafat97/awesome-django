@@ -88,8 +88,6 @@
 }
 
 .awesome-django-footer__lede {
-  margin: 0 auto 0.9rem;
-  max-width: 34rem;
   font-size: 0.72rem;
 }
 
@@ -104,7 +102,7 @@
 
 /* Capped to match the webring below it, so neither spans the whole footer. */
 .awesome-django-newsletter {
-  margin: 0 auto;
+  margin: 0.9rem auto 0;
   max-width: 34rem;
 }
 
@@ -114,8 +112,12 @@
   border: 1px solid #ccc;
 }
 
+/* auto, not 0, for the horizontal margins. This rule outranks the single-class
+   rules below it, so a 0 here would stop them centering themselves. Every
+   paragraph shares the 34rem column with the signup form and the webring. */
 .awesome-django-footer p {
-  margin: 0.6rem 0;
+  margin: 0.6rem auto;
+  max-width: 34rem;
 }
 
 /*
