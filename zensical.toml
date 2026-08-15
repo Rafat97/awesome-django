@@ -1,0 +1,74 @@
+[project]
+site_name = "Awesome Django"
+site_url = "https://awesomedjango.org/"
+site_description = "A curated list of awesome things related to Django. Maintained by William Vincent and Jeff Triplett"
+
+repo_url = "https://github.com/wsvincent/awesome-django"
+repo_name = "wsvincent/awesome-django"
+edit_uri = "edit/main/README.md"
+
+# README.md is the source of truth. docs/README.md is a symlink to it, so the
+# GitHub README and the website never drift apart.
+nav = [
+  { "Awesome Django" = "README.md" },
+]
+
+extra_css = ["stylesheets/django.css"]
+extra_javascript = ["javascripts/anchor-compat.js"]
+
+[project.theme]
+custom_dir = "overrides"
+language = "en"
+features = [
+  "announce.dismiss",
+  "content.action.edit",
+  "content.code.copy",
+  "navigation.instant",
+  "navigation.instant.prefetch",
+  "navigation.top",
+  "navigation.tracking",
+  "search.highlight",
+  "search.suggest",
+  "toc.follow",
+  # The site is one long page. Put the table of contents in the left sidebar
+  # so the category list is always visible, like the old just-the-docs nav.
+  "toc.integrate",
+]
+
+# primary and accent are "custom" so the theme does not emit its default
+# indigo rule. The real colors live in docs/stylesheets/django.css.
+[[project.theme.palette]]
+media = "(prefers-color-scheme: light)"
+scheme = "default"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/sun"
+toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+media = "(prefers-color-scheme: dark)"
+scheme = "slate"
+primary = "custom"
+accent = "custom"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
+
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/wsvincent/awesome-django"
+
+[project.markdown_extensions]
+attr_list = {}
+md_in_html = {}
+admonition = {}
+def_list = {}
+tables = {}
+# permalink restores the click-to-link heading anchors the Jekyll theme had
+# via heading_anchors: true.
+toc = { permalink = true }
+pymdownx.details = {}
+pymdownx.highlight = { anchor_linenums = true, pygments_lang_class = true }
+pymdownx.inlinehilite = {}
+pymdownx.magiclink = {}
+pymdownx.superfences = {}
+pymdownx.tasklist = { custom_checkbox = true }

@@ -5,9 +5,8 @@ description = "A curated list of awesome things related to Django. Maintained by
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = [
-  "mkdocs",
-  "mkdocs-material",
   "requests",
   "rich",
   "typer",
+  "zensical",
 ]
