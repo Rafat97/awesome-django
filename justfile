@@ -15,6 +15,7 @@
 @build:
     just doctoc
     uv run zensical build --clean
+    uv run python scripts/gen_llms.py site
 
 # Generate table of contents for README.md
 @doctoc:
