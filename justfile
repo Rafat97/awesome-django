@@ -11,18 +11,18 @@
     python -m pip install --upgrade pip uv
     uv pip install --upgrade --requirement pyproject.toml
 
-# Generate table of contents and build the Jekyll site
+# Generate table of contents and build the Zensical site
 @build:
     just doctoc
-    bundle exec jekyll build
+    uv run zensical build --clean
 
 # Generate table of contents for README.md
 @doctoc:
     bunx doctoc README.md
 
-# Stop the Docker containers
-@down:
-    docker compose down
+# Serve the site with live reload on port 8000
+@serve:
+    uv run zensical serve --dev-addr localhost:8000
 
 # Run linting on all files
 @lint *ARGS:
@@ -30,15 +30,6 @@
     # -bunx awesome-lint README.md
     uv tool run --with pre-commit-uv pre-commit run {{ ARGS }} --all-files
 
-# Start local development server
-@serve:
-    # modd --file=modd.conf
-    just up ""
-
-# Start containers (detached by default)
-@start *ARGS="--detach":
-    just up {{ ARGS }}
-
-# Start Docker containers with optional arguments
-@up *ARGS:
-    docker compose up {{ ARGS }}
+# Remove the generated site
+@clean:
+    rm -rf site
