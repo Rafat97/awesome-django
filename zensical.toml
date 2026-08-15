@@ -35,15 +35,21 @@ features = [
   "toc.integrate",
 ]
 
+# primary and accent are "custom" so the theme does not emit its default
+# indigo rule. The real colors live in docs/stylesheets/django.css.
 [[project.theme.palette]]
 media = "(prefers-color-scheme: light)"
 scheme = "default"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
 
 [[project.theme.palette]]
 media = "(prefers-color-scheme: dark)"
 scheme = "slate"
+primary = "custom"
+accent = "custom"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
@@ -56,6 +62,7 @@ attr_list = {}
 md_in_html = {}
 admonition = {}
 def_list = {}
+tables = {}
 # permalink restores the click-to-link heading anchors the Jekyll theme had
 # via heading_anchors: true.
 toc = { permalink = true }

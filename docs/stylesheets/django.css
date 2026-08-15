@@ -3,16 +3,18 @@
  * _sass/color_schemes/django.scss
  */
 
+/*
+ * The light palette sits on :root, not on [data-md-color-scheme="default"].
+ * The theme only puts that attribute on <html> once its JavaScript runs, so a
+ * scheme-scoped rule leaves the header indigo on the first paint.
+ */
 :root {
   --django-green-dark: #0c4b33;
   --django-green-mid: #20aa76;
   --django-green-light: #44b78b;
   --django-green-pale: #e8f5f0;
   --django-cream: #f9f7f3;
-}
 
-/* Light scheme */
-[data-md-color-scheme="default"] {
   --md-primary-fg-color: var(--django-green-dark);
   --md-primary-fg-color--light: var(--django-green-mid);
   --md-primary-fg-color--dark: #072e1f;
@@ -40,11 +42,19 @@
 }
 
 /* Headings use the dark Django green, as they did in the Jekyll theme. */
-[data-md-color-scheme="default"] .md-typeset h1,
-[data-md-color-scheme="default"] .md-typeset h2,
-[data-md-color-scheme="default"] .md-typeset h3,
-[data-md-color-scheme="default"] .md-typeset h4 {
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3,
+.md-typeset h4 {
   color: var(--django-green-dark);
+}
+
+/* Dark green is unreadable on the dark background, so lighten it. */
+[data-md-color-scheme="slate"] .md-typeset h1,
+[data-md-color-scheme="slate"] .md-typeset h2,
+[data-md-color-scheme="slate"] .md-typeset h3,
+[data-md-color-scheme="slate"] .md-typeset h4 {
+  color: var(--django-green-light);
 }
 
 /* The Django logo is a wide SVG. Keep it from overflowing on small screens. */
