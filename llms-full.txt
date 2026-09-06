@@ -254,6 +254,8 @@ _For a complete listing of all available packages, see [Django Packages](https:/
 - [django-celery-results](https://github.com/celery/django-celery-results) - Celery result backend with Django.
 - [django-tasks](https://github.com/realOrangeOne/django-tasks) - A reference implementation and backport of background workers and tasks in Django, based on [DEP 14](https://www.djangoproject.com/weblog/2024/may/29/django-enhancement-proposal-14-background-workers/).
 - [huey](https://github.com/coleifer/huey) - A little task queue for Python, with Django support including the new `django.tasks` API.
+- [django-ox](https://github.com/oxpull/django-ox) - Database-backed worker for Django's Tasks framework, with transactional enqueue, retries, recurring tasks, and no broker to run.
+- [django-absurd](https://github.com/lincolnloop/django-absurd) - Django integration for Absurd, a Postgres-native durable workflow system.
 
 ### Templates
 - [django-components](https://github.com/django-components/django-components/) - A way to create simple reusable template components in Django.
@@ -305,6 +307,9 @@ Standalone tools that help in developing Django projects.
 - [curlylint](https://www.curlylint.org/) - Experimental HTML templates linting for Jinja, Nunjucks, Django templates, Twig, Liquid.
 - [djhtml](https://github.com/rtts/djhtml) - Django/Jinja template indenter.
 - [djlint](https://www.djlint.com/) - Lint & Format HTML Templates.
+
+### Static Analysis
+- [django-orm-lens](https://github.com/FROWNINGdev/django-orm-lens) - Model-level static analysis: ER diagrams, N+1 detection, schema drift, and blast radius in CI, without a database or Django boot.
 
 ## Python Packages
 
@@ -412,14 +417,11 @@ _Django 5_
 ## Hosting
 
 ### PaaS (Platforms-as-a-Service)
-- [Appliku](https://appliku.com)
-- [Dokku](https://dokku.com)
 - [Divio](https://www.divio.com)
 - [Fly](https://fly.io)
 - [Google Cloud](https://cloud.google.com/python/django/)
 - [Heroku](https://www.heroku.com)
 - [Microsoft Azure](https://azure.microsoft.com/en-us/develop/python/)
-- [Piku](https://github.com/piku/piku)
 - [Upsun](https://upsun.com)
 - [PythonAnywhere](https://www.pythonanywhere.com)
 - [Railway](https://railway.app)
@@ -431,6 +433,20 @@ _Django 5_
 - [Linode](https://www.linode.com)
 - [Amazon Lightsail](https://aws.amazon.com/lightsail/)
 - [Hetzner](https://www.hetzner.com)
+
+### Deployment Services
+_Hosted services that deploy your app to servers you rent elsewhere._
+- [Appliku](https://appliku.com) - Django-focused deployment service for servers on DigitalOcean, Hetzner, AWS, and Linode.
+- [DeployHQ](https://www.deployhq.com) - Deploys from Git to your servers over SSH, SFTP, or S3, with build steps and rollbacks.
+
+### Self-Hosted Deployment
+_Open source tools that deploy your app to servers you own._
+- [Coolify](https://coolify.io) - Self-hosted PaaS with a web UI for Docker apps and databases, with an optional paid cloud control plane.
+- [Dokploy](https://dokploy.com) - Self-hosted PaaS with a web UI, built on Docker and Traefik, with an optional paid cloud control plane.
+- [CapRover](https://caprover.com) - Self-hosted PaaS with a web UI and one-click apps, built on Docker Swarm.
+- [Kamal](https://kamal-deploy.org) - Deploy containers to any server over SSH with zero downtime, from Basecamp.
+- [Dokku](https://dokku.com) - Docker-powered PaaS with Heroku-style git push deploys.
+- [Piku](https://github.com/piku/piku) - Tiny Heroku-style PaaS for git push deploys to a single server.
 
 ## Projects
 
@@ -465,6 +481,10 @@ _Django 5_
 - [Django CRM Admin](https://github.com/DjangoCRM/django-crm) - Open source Python CRM built entirely on Django Admin Site.
 - [linkding](https://github.com/sissbruecker/linkding) - Self-hosted bookmark manager that is designed to be minimal, fast, and easy to set up using Docker.
 - [pythonic-news](https://github.com/sebst/pythonic-news) - Hacker News clone.
+- [Revel](https://github.com/letsrevel/revel-backend) - Self-hostable event management and ticketing platform with organizations, questionnaire-based attendee screening, QR check-in, and Stripe payments.
+- [venueless](https://github.com/venueless/venueless) - Platform for online and hybrid events with live streams, chat, and video rooms, from the pretix team.
+- [pretix](https://github.com/pretix/pretix) - Ticket shop application for conferences, festivals, concerts, and other events.
+- [pretalx](https://github.com/pretalx/pretalx) - Conference planning tool for the call for papers, scheduling, and speaker management.
 
 ## Django REST Framework
 
